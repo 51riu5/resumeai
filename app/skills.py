@@ -10,9 +10,46 @@ SKILLS = [
     "flask",
     "data analysis",
     "nlp",
+    "ruby",
     "docker",
     "aws",
     "git",
-    "postgresql"
+    "postgresql",
+    "javascript",
+    "react",
+    "node.js",
+    "html",
+    "css",
+    #include all known skills 
+    #start adding
+    "kubernetes",
+    "tensorflow",
+    #give me all at once
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "scikit-learn",
+    "hadoop",
+    "spark",
+    "tableau",
+    "power bi",
+    "agile",
+    "scrum",
+    "restful api",
+    "graphql",
+    "linux",
+    "bash",
+    "ci/cd",
+    "jenkins",
+    "azure",
+    "gcp",
+    "microservices",
+    "blockchain",
+    "cybersecurity",
+    "devops",
+    "ui/ux design",
+    "project management",
+    
+    
 ]
 

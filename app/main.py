@@ -1,5 +1,7 @@
 from fastapi import FastAPI, UploadFile, File
 import pdfplumber
+from app.skill_extractor import extract_skills
+
 
 app = FastAPI(title="Resume Skill Intelligence API")
 
@@ -20,7 +22,10 @@ async def upload_resume(file: UploadFile = File(...)):
         for page in pdf.pages:
             text += page.extract_text() or ""
 
+    skills = extract_skills(text)
+
     return {
         "filename": file.filename,
-        "text_preview": text[:500]  # first 500 characters
+        "skills_found": skills,
+        "total_skills": len(skills)
     }
